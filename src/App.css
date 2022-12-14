@@ -13,19 +13,34 @@
   grid-template-rows: repeat(5, calc(95vh / 5));
 }
 .Square {
+  background: tomato;
+}
+.Square-read {
+  background: tomato;
+  cursor: pointer;
+}
+
+.Square-text {
   text-align: center;
   display: flex;
   align-items: center;
-  background: tomato;
-  /* height: 120px; */
-  /* padding: 20px; */
+  justify-content: center;
+  height: calc(100% - 60px);
 }
 
 .Square-selected {
-  text-align: center;
-  display: flex;
-  align-items: center;
   background: greenyellow;
-  /* height: 120px; */
-  /* padding: 20px; */
+}
+.Square-selected-read {
+  background: greenyellow;
+  cursor: pointer;
+}
+
+.Square-edit {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Square-edit > div {
+  padding: 20px;
 }
