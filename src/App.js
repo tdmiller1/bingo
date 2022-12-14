@@ -25,8 +25,8 @@ const Square = ({ uid, text, selected }) => {
           />
           <button onClick={handleEdit}>Submit</button>
         </div>
-        <div style={{ textAlign: "center" }} onClick={() => deleteTask(uid)}>
-          <Trash />
+        <div style={{ textAlign: "center" }}>
+          <Trash onClick={() => deleteTask(uid)} />
         </div>
       </div>
     );
